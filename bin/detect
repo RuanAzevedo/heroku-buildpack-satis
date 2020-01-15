@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# this pack is valid for apps with a satis.json in the root
+if [ -f $1/satis.json ]; then
+  echo "Satis"
+  exit 0
+else
+  exit 1
+fi
