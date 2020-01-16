@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "-----> Building Satis to path: ${1}/web"
+echo "-----> Building Satis to path: ${1}/public/statis"
 
 export COMPOSER_HOME=$1/.composer/
-php $1/bin/satis build $1/satis.json $1/web/
+
+mkdir $1/public/satis
+php $1/vendor/bin/satis build $1/satis.json $1/public/satis
