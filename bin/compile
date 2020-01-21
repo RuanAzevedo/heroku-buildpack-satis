@@ -4,5 +4,5 @@ echo "-----> Building Satis to path: ${1}/public/statis"
 
 export COMPOSER_HOME=$1/.composer/
 
-mkdir $1/public/satis
+#mkdir $1/public/satis
 php $1/vendor/bin/satis build $1/satis.json $1/public/satis
